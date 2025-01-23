@@ -1,4 +1,5 @@
 const About = () =>{
+  return (
   <>
     <div className="container">
       <div className="col-12">
@@ -7,7 +8,7 @@ const About = () =>{
       </div>
     </div>
   </>
-  
+  )  
 }
 
 

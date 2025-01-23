@@ -1,6 +1,7 @@
 
 
 const Home = () =>{
+  return (
   <>
     <div className="container">
       <div className="col-12">
@@ -9,7 +10,7 @@ const Home = () =>{
       </div>
     </div>
   </>
-  
+  )
 }
 
 export default Home

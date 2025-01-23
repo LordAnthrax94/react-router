@@ -1,6 +1,7 @@
 
 
 const Contacts = () =>{
+  return (
   <>
     <div className="container">
       <div className="col-12">
@@ -9,7 +10,7 @@ const Contacts = () =>{
       </div>
     </div>
   </>
-  
+  )  
 }
 
 
