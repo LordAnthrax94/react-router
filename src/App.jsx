@@ -14,8 +14,8 @@ const App = () => {
       <Routes>
         <Route Component={DefaultLayout}>
         <Route path="/" Component={Home} />
-        <Route path="/About" Component={About} />
-        <Route path="/Contacts" Component={Contacts} />
+        <Route path="/about" Component={About} />
+        <Route path="/contacts" Component={Contacts} />
         </Route>
       </Routes>
     </BrowserRouter>
