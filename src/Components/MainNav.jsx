@@ -18,4 +18,4 @@ const MainNav = () =>{
   )
 }
 
-export default NavLink
+export default MainNav
