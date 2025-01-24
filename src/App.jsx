@@ -4,6 +4,9 @@ import DefaultLayout from "./layouts/DefaultLayout"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Contacts from "./pages/Contacts"
+import PostList from "./pages/PostList"
+import PostDetail from "./pages/PostDetail"
+import Error404 from "./pages/Error404"
 
 
 
@@ -16,6 +19,9 @@ const App = () => {
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />
         <Route path="/contacts" Component={Contacts} />
+        <Route path="/PostList" Component={PostList} />
+        <Route path="/PostDetail/:id" Component={PostDetail}/>
+        <Route path="*" Component={Error404} />
         </Route>
       </Routes>
     </BrowserRouter>

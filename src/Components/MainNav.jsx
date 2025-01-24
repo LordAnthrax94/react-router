@@ -13,6 +13,9 @@ const MainNav = () =>{
         <li className="nav-item">
           <NavLink to="/Contacts" className="nav-link">Contatti</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink to="/PostList" className="nav-link">I tuoi post</NavLink>
+        </li>
       </ul>
     </nav>
   )
