@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 const AddPost = () =>{
-  const initialFormData = {
-    id: "",
+  const initialFormData = {    
     title: "",
     content:"",
     image: "",
@@ -29,19 +28,18 @@ const AddPost = () =>{
       ...formData,
       tags: formTags
     }
-    axios.post(`${baseApiUrl}/posts`, newPost
-      .then(res => {
-        setPosts(res.data)
+    axios.post(`${baseApiUrl}/posts`, newPost)
+      .then(res => {        
         setFormData(initialFormData)
         navigate("/PostList")
       })
-    )   
+       
   }
 
   return (
     <>
     <div className="container">
-          <div className="inputControll col-12 mt-5 text-bg-warning shadow p-5">
+          <div className="inputControll col-12 mt-5 text-bg-primary shadow p-5">
             <form action="#" onSubmit={handlePostAdd}>
               <div className="input-group mb-3">                  
                 <input 
@@ -65,6 +63,17 @@ const AddPost = () =>{
                 aria-describedby="button-addon1" 
                 value={formData.image} 
                 onChange={handlePostChange} />
+              </div>
+
+              <div className="mb-3">                
+                <label htmlFor="exampleFormControlTextarea1" className="form-label">Inserire contenuto del Post</label>
+                <textarea 
+                name="content" 
+                className="form-control" 
+                id="exampleFormControlTextarea1" 
+                rows="3" 
+                value={formData.content} 
+                onChange={handlePostChange}></textarea>
               </div>             
 
               <div className="input-group mb-3">                  
@@ -78,7 +87,7 @@ const AddPost = () =>{
                 value={formData.tags} 
                 onChange={handlePostChange} />
               </div>
-              <button className="btn btn-danger" type="submit" id="button-addon1">Aggiungi</button>
+              <button className="btn btn-success" type="submit" id="button-addon1">Aggiungi</button>
             </form>
           </div>
         </div>

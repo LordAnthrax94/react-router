@@ -27,7 +27,7 @@ const PostList = () => {
         <>
         <div className="container">
           <div className="col-12">
-            <h3>ElenData</h3>
+            <h3>Elenco Post</h3>
               <ul className="list-group">{posts === null? (<h2>Caricamento...</h2>) : (posts.map((post) => (
                 <li key={post.id} className="list-group-item d-flex justify-content-between">
                   <span>{post.title}</span>
