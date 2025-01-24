@@ -29,7 +29,7 @@ const PostList = () => {
           <div className="col-12">
             <h3>ElenData</h3>
               <ul className="list-group">{posts === null? (<h2>Caricamento...</h2>) : (posts.map((post) => (
-                <li key={post.id} className="list-group-item">
+                <li key={post.id} className="list-group-item d-flex justify-content-between">
                   <span>{post.title}</span>
                   <Link className="btn btn-primary" to={`/PostDetail/${post.id}`}>Vedi Dettagli</Link>
                 </li>
